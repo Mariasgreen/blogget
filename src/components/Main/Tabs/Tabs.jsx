@@ -4,16 +4,16 @@ export const Tabs = () => {
   console.log(style);
   return (<ul className={style.list}>
     <li>
-      <a href='/'>Glavnaja</a>
+      <a href='/'>Главная</a>
     </li>
     <li>
-      <a href='/'>Prosmotrinnie</a>
+      <a href='/'>Просмотренные</a>
     </li>
     <li>
-      <a href='/'>Sohr</a>
+      <a href='/'>Сохраненные</a>
     </li>
     <li>
-      <a href='/'>Post</a>
+      <a href='/'>Мои посты</a>
     </li>
   </ul>);
 };

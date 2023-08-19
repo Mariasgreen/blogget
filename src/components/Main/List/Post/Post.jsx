@@ -1,26 +1,27 @@
 import React from 'react';
 import style from './Post.module.css';
-import PostHeader from './PostHeader/PostHeader';
 import PostContent from './PostContent/PostContent';
 import PostRating from './PostRating/PostRating';
 import PostDate from './PostDate/PostDate';
-import notphoto from './img/notphoto.jpg';
+import PostImg from './PostImg/PostImg';
+import Delete from './Delete';
 import PropTypes from 'prop-types';
 
 export const Post = ({postData}) => {
-  const {title, author, content, ups, downs, date} = postData;
+  const {title, author, ups, downs, date} = postData;
   return (
     <li className={style.post}>
-      <PostHeader title={title} style={style} />
-      <img className={style.img} src={notphoto} alt={title} />
-      <PostContent author={author} content={content} style={style} />
-      <PostRating ups={ups} downs={downs} style={style} />
-      <PostDate date={date} style={style} />
+      <PostContent author={author} title={title} />
+      <PostImg title={title} />
+      <PostRating ups={ups} downs={downs} />
+      <PostDate date={date} />
+      <Delete />
     </li>
   );
 };
 
 Post.propTypes = {
+  style: PropTypes.object,
   postData: PropTypes.object,
   title: PropTypes.string,
   author: PropTypes.string,
