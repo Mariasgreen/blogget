@@ -8,12 +8,12 @@ import Delete from './Delete';
 import PropTypes from 'prop-types';
 
 export const Post = ({postData}) => {
-  const {title, author, ups, downs, date} = postData;
+  const {title, author, ups, date} = postData;
   return (
     <li className={style.post}>
       <PostContent author={author} title={title} />
       <PostImg title={title} />
-      <PostRating ups={ups} downs={downs} />
+      <PostRating ups={ups} />
       <PostDate date={date} />
       <Delete />
     </li>
@@ -27,6 +27,5 @@ Post.propTypes = {
   author: PropTypes.string,
   content: PropTypes.string,
   ups: PropTypes.number,
-  downs: PropTypes.number,
   date: PropTypes.string,
 };

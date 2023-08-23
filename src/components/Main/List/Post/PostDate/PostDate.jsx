@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import style from '../Post.module.css';
+import style from './PostDate.module.css';
 
 const formatDate = date => {
   const options = {

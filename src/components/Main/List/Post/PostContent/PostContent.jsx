@@ -1,5 +1,6 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
-import style from '../Post.module.css';
+import style from './PostContent.module.css';
 import PropTypes from 'prop-types';
 
 const PostContent = ({author, title}) => (
