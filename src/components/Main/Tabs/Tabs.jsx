@@ -8,7 +8,7 @@ import {ReactComponent as BestIcon} from './img/best.svg';
 import {ReactComponent as HomeIcon} from './img/home.svg';
 import {ReactComponent as HotIcon} from './img/hot.svg';
 import {ReactComponent as TopIcon} from './img/top.svg';
-import {Text} from '../../../UI/Text';
+
 
 const LIST = [
   {value: 'Главная', Icon: HomeIcon},
@@ -44,7 +44,7 @@ export const Tabs = () => {
         <button
           className = {style.btn}
           onClick={() => setIsDropDownOpen(!isDropDownOpen)}>
-          <Text weight="bold">{selectedItem}</Text>
+          {selectedItem}
           <ArrowIcon width={15} height={15}/>
         </button>
       </div>)}
