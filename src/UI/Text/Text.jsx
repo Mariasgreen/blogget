@@ -13,6 +13,7 @@ export const Text = prop => {
     className,
     children,
     href,
+    center,
   } = prop;
 
 
@@ -23,6 +24,7 @@ export const Text = prop => {
     {[style[`fst${size}`]]: tsize},
     {[style[`fsd${size}`]]: dsize},
     {[style[`fw-${weight}`]]: weight},
+    {[style['centerText']]: center},
   );
 
   return <As className= {classes} href={href}>{children}</As>;

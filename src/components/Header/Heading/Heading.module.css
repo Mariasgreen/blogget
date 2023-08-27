@@ -7,7 +7,5 @@
     .heading {
       order: 0;
       grid-column: auto;
-      text-align: center;
-      font-size: 26px;
     }
   }

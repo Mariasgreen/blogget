@@ -33,10 +33,14 @@ export const Tabs = () => {
   useEffect(() => {
     const debounceResize = debponceRaf(handleResize);
     window.addEventListener('resize', debounceResize);
+
+    handleResize();
+
     return () => {
       window.removeEventListener('resize', debounceResize);
     };
   }, []);
+
 
   return (
     <div className = {style.container}>

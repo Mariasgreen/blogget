@@ -184,4 +184,8 @@
     .fw-bold {
       font-weight: 700;
     }
+    .centerText {
+    
+       text-align: center; 
+    }
   }
